@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    <TextView
+        android:id="@+id/yourname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="120dp"
+        android:textSize="24sp"
+        android:text="@string/yourname" />
+
+    <TextView
+        android:id="@+id/emailadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourname"
+        android:layout_alignRight="@+id/yourname"
+        android:layout_marginTop="40dp"
+        android:textSize="24sp"
+        android:text="@string/emailadd" />    
+        
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/yourname"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@+id/yourname"
+        android:textSize="24sp"
+        android:hint="@string/hint1"
+         />
+        
+    <EditText
+        android:id="@+id/emailadds"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/emailadd"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@+id/emailadd"
+        android:textSize="24sp"
+        android:hint="@string/hint2"
+        android:inputType="textEmailAddress"/>
+        
+    <Button
+        android:id="@+id/byemail"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/emailadds"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="210dp"
+        android:text="@string/byemail"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape"
+        android:textSize="30sp" />
+    
+    <Button
+        android:id="@+id/byfb"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/byemail"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="210dp"
+        android:text="@string/byfb"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape"
+        android:textSize="30sp" />
+    
+	    <ImageView
+	        android:id="@+id/fbimage"
+	        android:layout_width="240dp"
+	        android:layout_height="80dp"
+	        android:layout_below="@+id/byemail"
+	        android:layout_marginLeft="60dp"
+	        android:layout_marginTop="50dp"
+	        android:adjustViewBounds="true"
+	        android:contentDescription="@string/force"
+	        android:src="@drawable/fbimage" />
+
+    </RelativeLayout>
+</LinearLayout>

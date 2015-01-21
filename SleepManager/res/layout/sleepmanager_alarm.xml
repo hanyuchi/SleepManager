@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	
+    <RelativeLayout
+    	android:id="@+id/relativeLayout1" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/alarmsetting"
+        android:textSize="18sp"
+        android:text=""/>
+
+    <com.example.time.DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"        
+        android:layout_marginLeft="30dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:textSize="50sp"/>
+
+    <ToggleButton
+        android:id="@+id/toggle1"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"        
+        android:layout_marginRight="30dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:background="@drawable/toggle"
+        android:textSize="20sp" />
+
+	</RelativeLayout>
+</ScrollView>
+
+

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TimePicker
+        android:id="@+id/sleeptimePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/sleeptime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        android:text="@string/time"/>
+  
+    <View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/sleeptimePicker1"
+        android:layout_marginTop="1dp"/>
+    
+    <TextView
+        android:id="@+id/sleepday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/sleeptime"
+        android:layout_below="@+id/sleeptime"
+        android:layout_marginTop="170dp"
+        android:textSize="30sp"
+        android:text="@string/day"/>
+
+    <Spinner
+        android:id="@+id/sleepdaychoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sleeptimePicker1"
+        android:layout_alignTop="@+id/sleepday"/>
+    
+    <View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/sleepday"
+        android:layout_marginTop="50dp"/>
+    
+    <TextView
+        android:id="@+id/sleepring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignRight="@+id/sleeptime"
+        android:layout_below="@+id/sleepday"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:text="@string/ringtone"/>
+    
+    <Spinner
+        android:id="@+id/sleepringchoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sleepdaychoose"
+        android:layout_alignTop="@+id/sleepring" />
+    
+    <View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/sleepring"
+        android:layout_marginTop="50dp"/>
+    
+    
+    <Button
+        android:id="@+id/sleepsettingdelete"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sleepring"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="30sp"
+        android:background="@drawable/savedelete"
+        android:textColor="#ffffff"
+        android:text="@string/delete"/>
+    
+    <Button
+        android:id="@+id/sleepsettingsave"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sleepring"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="340dp"
+        android:textSize="30sp"
+        android:background="@drawable/savedelete"
+        android:textColor="#ffffff"
+        android:text="@string/save"/>
+    
+</RelativeLayout> 

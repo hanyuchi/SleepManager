@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/motion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:text="Tracking Sleep Motion:"/>
+  
+    <View
+        android:id="@+id/line1"
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/motion"
+        android:layout_marginTop="40dp"/>
+    
+    <TextView
+        android:id="@+id/start"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/motion"
+        android:layout_marginTop="150dp"
+        android:textSize="30sp"
+        android:text="Start Time:"/>
+    
+    <TimePicker
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/motion"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="300dp"/>
+
+    <View
+        android:id="@+id/line2"
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/starttime"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignRight="@+id/start"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="200dp"
+        android:textSize="30sp"
+        android:text="End Time:"/>
+    
+    <TimePicker
+        android:id="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/starttime"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="300dp"/>
+    
+    <View
+        android:id="@+id/line3"
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/endtime"
+        android:layout_marginTop="30dp"/>
+    
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/captcha"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="30sp"
+        android:background="@drawable/savedelete"
+        android:textColor="#ffffff"
+        android:text="Cancel"/>
+    
+    <Button
+        android:id="@+id/save"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/captcha"
+        android:layout_marginTop="700dp"
+        android:layout_marginLeft="340dp"
+        android:textSize="30sp"
+        android:background="@drawable/savedelete"
+        android:textColor="#ffffff"
+        android:text="Save"/>
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>

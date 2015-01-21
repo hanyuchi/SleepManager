@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	>
+	
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        android:text="@string/time"/>
+  
+    <View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/timePicker1"
+        android:layout_marginTop="1dp"/>
+    
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/time"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="170dp"
+        android:textSize="30sp"
+        android:text="@string/day"/>
+
+    <Spinner
+        android:id="@+id/daychoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timePicker1"
+        android:layout_alignTop="@+id/day"/>
+    
+    <View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/day"
+        android:layout_marginTop="50dp"/>
+    
+    <TextView
+        android:id="@+id/ring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignRight="@+id/time"
+        android:layout_below="@+id/day"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:text="@string/ringtone"/>
+    
+    <Spinner
+        android:id="@+id/ringchoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/daychoose"
+        android:layout_alignTop="@+id/ring" />
+    
+    <View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/ring"
+        android:layout_marginTop="50dp"/>
+    
+    <TextView
+        android:id="@+id/captcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignRight="@+id/time"
+        android:layout_below="@+id/ring"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:text="@string/captcha"/>
+    
+    <Spinner
+        android:id="@+id/captchachoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ringchoose"
+        android:layout_alignTop="@+id/captcha" />
+    
+    <View
+		android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="#000000" 
+		android:layout_below="@+id/captcha"
+        android:layout_marginTop="50dp"/>
+    
+    <Button
+        android:id="@+id/alarmsettingdelete"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/captcha"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="30sp"
+        android:background="@drawable/savedelete"
+        android:textColor="#ffffff"
+        android:text="@string/delete"/>
+    
+    <Button
+        android:id="@+id/alarmsettingsave"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/captcha"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="340dp"
+        android:textSize="30sp"
+        android:background="@drawable/savedelete"
+        android:textColor="#ffffff"
+        android:text="@string/save"/>
+    
+</RelativeLayout> 

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sleepmanager.Chart" >
+
+    <!-- Help -->
+    <item android:id="@+id/action_help"
+        android:orderInCategory="100"          
+        android:title="@string/action_help"
+        android:showAsAction="never"/>
+        
+    <!-- Home -->
+    <item android:id="@+id/action_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/action_home"
+        android:background="@null"
+        app:showAsAction="always" />
+
+</menu>
